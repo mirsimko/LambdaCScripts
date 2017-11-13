@@ -14,6 +14,6 @@ seq 0 $( expr $( ls $listDirectory | wc -l ) - 1 ) >> temp.list
 
 # find unique numbers (i.e. lists that don't have a root file) end write them into lostJobs.list
 echo Writing to lostJobs.list
-sort temp.list | uniq -u >> lostJobs.list
+sort temp.list | uniq -u > lostJobs.list
 
 rm temp.list
