@@ -1,6 +1,6 @@
 #!/bin/bash
 
-file=picoList_all.list
+file=${1:-picoList_all.list}
 
 echo sorting ...
 sort $file > tmp.list
